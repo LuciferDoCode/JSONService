@@ -5,5 +5,12 @@
         "height": 748,
         "uri": "https://www.google.com",
         "label": "Google"
-    }
+    },
+    "primaryAction": {
+        "type": "IFRAME",
+        "width": 890,
+        "height": 748,
+        "uri": "https://www.google.com",
+        "label": "Open Google"
+      }
 }
