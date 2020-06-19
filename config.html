@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src= 'https://statics.teams.cdn.office.net/sdk/v1.6.0/js/MicrosoftTeams.min.js'></script>
+    <title>Setup Heymarket Chats Tab</title>
+</head>
+
+<body>
+    <script>
+        microsoftTeams.initialize();
+        microsoftTeams.settings.setValidityState(true);
+        microsoftTeams.settings.registerOnSaveHandler((saveEvent) => {
+            microsoftTeams.settings.setSettings({
+                suggestedDisplayName: "Heymarket",
+                contentUrl: "https://htmlpreview.github.io/?https://github.com/LuciferDoCode/JSONService/blob/master/tab.html",
+            });
+            saveEvent.notifySuccess();
+        });
+    </script>
+    <h3> Click on save button to install</h3>
+</body>
+
+</html>
